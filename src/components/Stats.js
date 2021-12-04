@@ -4,17 +4,14 @@ import styled from "styled-components";
 export default function Stats({ profileObj }) {
   return (
     <Container>
-      {/* {profileObj.map(obj, index) => {
-            return <Stat key={index}>
-
-            </Stat>
-        }} */}
-      <Stat>
-        <Number>30</Number>
-        <Title>Followers</Title>
-      </Stat>
-      <Stat></Stat>
-      <Stat></Stat>
+      {profileObj.map((obj, index) => {
+        return (
+          <Stat key={index}>
+            <Number>{obj.stats}</Number>
+            <Title>{obj.title}</Title>
+          </Stat>
+        );
+      })}
     </Container>
   );
 }
@@ -34,20 +31,16 @@ const Container = styled.div`
 const Stat = styled.div`
   width: 80px;
   height: 60px;
-  background-color: red;
   text-align: center;
 `;
 
 const Number = styled.div`
   width: 100%;
   height: 20px;
-  background-color: blue;
   padding-top: 10px;
 `;
 
 const Title = styled.div`
-  width: 30px;
+  width: 100%;
   height: 30px;
-  padding: 5px;
-  background-color: blue;
 `;
