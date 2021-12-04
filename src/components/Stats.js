@@ -38,6 +38,7 @@ const Number = styled.div`
   width: 100%;
   height: 20px;
   padding-top: 10px;
+  margin-bottom: 8px;
 `;
 
 const Title = styled.div`
