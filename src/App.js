@@ -2,9 +2,15 @@ import styled from "styled-components";
 import CardContainer from "./components/CardContainer";
 
 function App() {
+  const profileObj = [
+    { stats: 300, title: "Likes" },
+    { stats: 500, title: "Followers" },
+    { stats: 800, title: "Favorites" },
+  ];
+
   return (
     <Container>
-      <CardContainer></CardContainer>
+      <CardContainer profileObj={profileObj}></CardContainer>
     </Container>
   );
 }

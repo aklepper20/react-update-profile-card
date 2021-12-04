@@ -4,12 +4,12 @@ import Header from "./Header";
 import ProfileInfo from "./ProfileInfo";
 import Stats from "./Stats";
 
-export default function CardContainer() {
+export default function CardContainer({ profileObj }) {
   return (
     <Container>
       <Header />
       <ProfileInfo />
-      <Stats />
+      <Stats profileObj={profileObj} />
     </Container>
   );
 }
