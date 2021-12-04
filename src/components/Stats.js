@@ -7,8 +7,9 @@ export default function Stats() {
 
 const Container = styled.div`
   width: 100%;
-  height: 105px;
+  height: 95px;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
-  background-color: orange;
+  background-color: #fff;
+  border-top: 1px solid hsl(227, 10%, 86%);
 `;

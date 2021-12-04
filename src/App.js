@@ -18,6 +18,7 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #cce6f4;
 `;
 
 export default App;
